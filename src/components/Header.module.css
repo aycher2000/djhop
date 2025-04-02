@@ -1,0 +1,140 @@
+.header {
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.navList li {
+  margin: 0 12px;
+}
+
+.navList li a {
+  color: white !important;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 8px 15px;
+  border-radius: 4px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+}
+
+.navList li a:hover {
+  color: #00ffff !important;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+  transform: translateY(-2px);
+}
+
+.activeLink {
+  color: #00ffff !important;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.8) !important;
+  background-color: rgba(0, 255, 255, 0.1);
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.mobileMenuBtn {
+  display: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: white;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.mobileMenuBtn:hover {
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+.mobileMenuBtn i {
+  font-size: 1.5rem;
+}
+
+/* Mobile and Tablet Styles */
+@media screen and (max-width: 1024px) {
+  .navList {
+    display: none;
+    flex-direction: column;
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    padding: 5rem 2rem 2rem;
+    z-index: 1000;
+    transition: left 0.3s ease-in-out;
+  }
+
+  .navList.active {
+    display: flex;
+    left: 0;
+    box-shadow: 5px 0 30px rgba(0, 255, 255, 0.3);
+  }
+
+  .mobileMenuBtn {
+    display: block;
+    z-index: 1001;
+  }
+
+  .navList li {
+    margin: 15px 0;
+    text-align: left;
+  }
+  
+  .navList li a {
+    display: block;
+    padding: 12px 15px;
+    box-shadow: 0 0 8px rgba(0, 255, 255, 0.4);
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .navList {
+    display: flex !important;
+  }
+}

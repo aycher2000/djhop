@@ -1,36 +1,65 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Dj H.O.P Website
 
-## Getting Started
+A Next.js-based website for Dj H.O.P, converted from a static HTML site to a modern React component-based architecture.
 
-First, run the development server:
+## Features
+
+- Responsive design with mobile-friendly navigation
+- Component-based architecture for easy maintenance and updates
+- Modern animations and styling
+- Contact forms with FormSpree integration
+- Media showcases including videos, music players, and image galleries
+
+## Tech Stack
+
+- Next.js 15+ (App Router)
+- React 18+
+- TypeScript
+- CSS Modules
+- Font Awesome for icons
+- Responsive images with next/image
+
+## Development
+
+### Getting Started
+
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Project Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `/src/app` - Next.js app router pages
+- `/src/components` - Reusable React components
+- `/public/images` - Static images and assets
 
-## Learn More
+## Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This site can be deployed on Vercel or any Next.js-compatible hosting service:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Original Site Conversion
 
-## Deploy on Vercel
+This site was converted from a static HTML/CSS/JS website to a modern Next.js application. The original site structure and design elements were preserved while improving:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- Code organization
+- Component reusability
+- Performance
+- Maintainability
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## License
+
+All rights reserved.

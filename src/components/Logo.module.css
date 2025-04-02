@@ -1,0 +1,28 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoWrapper {
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.logoImage {
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.flipped {
+  transform: rotateY(360deg);
+}
+
+.logoText {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.7);
+}

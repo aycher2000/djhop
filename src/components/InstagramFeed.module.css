@@ -1,0 +1,58 @@
+.instagramSection {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  text-align: left;
+}
+
+.instagramSection h2 {
+  margin-bottom: 20px;
+  color: #00ffff;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.instagramPost {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  overflow: hidden;
+}
+
+.instagramPost img {
+  border-radius: 5px;
+  margin-right: 15px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.instagramPost a:hover img {
+  transform: scale(1.1);
+}
+
+.instagramPost p {
+  color: #00ffff;
+  font-size: 16px;
+  flex: 1;
+  word-wrap: break-word;
+}
+
+.followLink {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #00ffff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.followLink:hover {
+  text-decoration: underline;
+  color: #ff00ff;
+}

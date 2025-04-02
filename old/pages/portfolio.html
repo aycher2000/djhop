@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Showcase - Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css"> <!-- ✅ Link to main stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.1/css/lightgallery.min.css">
+</head>
+
+<body> <!-- ✅ Missing <body> added here -->
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Dj H.O.P</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="interviews.html">Interviews</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section class="portfolio-gallery">
+        <div class="container">
+            
+     <section class="portfolio-gallery">
+  <div class="container">
+    
+    <!-- 🎥 Featured YouTube Videos -->
+    <h2 class="section-title">Featured Videos</h2>
+    <div class="video-grid">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/fEuHaelQuN4" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/LA1qmmRgmCI" frameborder="0" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/80FoctgaDUA" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</section>
+
+            <!-- 🎨 Album & DVD Artwork -->
+            <h2 class="section-title">Album & DVD Covers</h2>
+            <div class="gallery" id="portfolio-gallery">
+                <a href="../images/album1-large.jpg" class="gallery-item">
+                    <img src="../images/album1-thumb.jpg" alt="Album Cover 1">
+                    <div class="overlay"><h3>NMCL 2004</h3></div>
+                </a>
+                <a href="../images/album2-large.jpg" class="gallery-item">
+                    <img src="../images/album2-thumb.jpg" alt="Album Cover 2">
+                    <div class="overlay"><h3>CaptureTheFlag 2001</h3></div>
+                </a>
+                <a href="../images/dvd1-large.jpg" class="gallery-item">
+                    <img src="../images/dvd1-thumb.jpg" alt="DVD Cover 1">
+                    <div class="overlay"><h3>QBert DIY2 F/Dj H.O.P</h3></div>
+                </a>
+                <a href="../images/dvd2-large.jpg" class="gallery-item">
+                    <img src="../images/dvd2-thumb.jpg" alt="DVD Cover 2">
+                    <div class="overlay"><h3>Bay Exports F/ Dj H.O.P</h3></div>
+                </a>
+            </div>
+
+<!-- 🎵 Apple Music Track -->
+<section class="music-section">
+    <h2 class="section-title">Stream on Apple Music</h2>
+    <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" 
+        frameborder="0" 
+        height="175" 
+        style="width:100%; max-width:660px; overflow:hidden; border-radius:10px;" 
+        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation" 
+        src="https://embed.music.apple.com/us/album/aych-2-oh/884962011?i=884962165&theme=dark">
+    </iframe>
+</section>
+
+        </div>
+    </section>
+    <footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <h2>Dj H.O.P</h2>
+      </div>
+      <div class="social-links">
+        <!-- ✅ Clickable Instagram & Facebook -->
+        <a href="https://www.instagram.com/chrishopbarton" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/17xq2EXy4y/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook"></i></a>
+        
+        <!-- ❌ Disabled Twitter & YouTube (Greyed Out) -->
+        <a href="#" class="disabled-link"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="disabled-link"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; 2025 Dj H.O.P. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+    <!-- ✅ JavaScript Fix: Add the script at the bottom -->
+    <script src="../js/main.js"></script>
+
+</body> <!-- ✅ Closing <body> added here -->
+</html>

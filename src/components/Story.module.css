@@ -1,0 +1,49 @@
+.legendaryStory {
+  background-color: #111;
+  color: #d0ffd0;
+  padding: 60px 20px;
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(0, 255, 0, 0.3);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.storyTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #00ff00;
+  text-shadow: 0px 0px 10px rgba(0, 255, 0, 0.8);
+  margin-bottom: 20px;
+}
+
+.storyContent {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.storyContent p {
+  margin-bottom: 15px;
+}
+
+.storyContent strong {
+  color: #2ebd35;
+}
+
+.storyContent em {
+  color: #00ffff;
+}
+
+.storyContent blockquote {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: red;
+  text-shadow: 2px 2px 5px rgba(255, 0, 0, 0.5);
+  margin: 20px 0;
+}

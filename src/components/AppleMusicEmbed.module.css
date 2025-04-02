@@ -1,0 +1,9 @@
+.appleMusicEmbed {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 660px;
+  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+  border-radius: 10px;
+}
