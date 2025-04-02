@@ -48,7 +48,7 @@ export default function Header() {
     return () => {
       document.removeEventListener('click', handleClickOutside);
     };
-  }, [isMenuOpen, styles.navList, styles.mobileMenuBtn]);
+  }, [isMenuOpen]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // Close menu when path changes
   useEffect(() => {

@@ -7,7 +7,7 @@ export default function Hero() {
       <div className={styles.container}>
         <div className={styles.heroContent}>
           <h2 className={styles.title}>Welcome</h2>
-          <p className={styles.subtitle}>If you're reading this, you're already infected...</p>
+          <p className={styles.subtitle}>If you&apos;re reading this, you&apos;re already infected...</p>
           <Link href="/portfolio" className={styles.btn}>
             View Portfolio
           </Link>
