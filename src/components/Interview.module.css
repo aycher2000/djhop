@@ -2,10 +2,11 @@
   background: #111;
   border-radius: 10px;
   box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.8);
-  padding: 20px;
+  padding: 30px;
   max-width: 800px;
   width: 100%;
   transition: 0.3s ease-in-out;
+  margin: 0 auto;
 }
 
 .interviewCard:hover {
@@ -16,7 +17,7 @@
   width: 100%;
   max-height: 400px;
   border-radius: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   object-fit: cover;
   transition: 0.3s ease-in-out;
 }
@@ -29,10 +30,10 @@
   font-size: 24px;
   color: #0ff;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .interviewContent {
-  text-align: left;
   color: #ddd;
   font-size: 16px;
   line-height: 1.6;
