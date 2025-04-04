@@ -1,36 +1,36 @@
-import Image from 'next/image';
+"use client";
+
+import { useEffect } from 'react';
+import Script from 'next/script';
 import styles from './InstagramFeed.module.css';
 
-interface InstagramPost {
-  id: number;
-  imageSrc: string;
-  caption: string;
-  link: string;
-}
-
 interface InstagramFeedProps {
-  posts: InstagramPost[];
+  // No longer need to pass in posts, as we're using the Elfsight widget
+  posts?: any[];
 }
 
-export default function InstagramFeed({ posts }: InstagramFeedProps) {
+export default function InstagramFeed({}: InstagramFeedProps) {
+  useEffect(() => {
+    // This will trigger Elfsight to reload widgets when the component mounts
+    if (typeof window !== 'undefined' && (window as any).eapps) {
+      (window as any).eapps.initAll();
+    }
+  }, []);
+
   return (
     <div className={styles.instagramSection}>
       <h2>Latest Instagram Posts</h2>
       
-      {posts.map((post) => (
-        <div key={post.id} className={styles.instagramPost}>
-          <a href={post.link} target="_blank" rel="noopener noreferrer">
-            <Image 
-              src={post.imageSrc} 
-              alt={`Instagram Post ${post.id}`} 
-              width={150}
-              height={150}
-              style={{ objectFit: 'cover' }}
-            />
-          </a>
-          <p>{post.caption}</p>
-        </div>
-      ))}
+      <div className={styles.widgetContainer}>
+        <Script 
+          src="https://static.elfsight.com/platform/platform.js" 
+          strategy="afterInteractive"
+        />
+        <div 
+          className="elfsight-app-750cf217-917b-4c7d-8cf6-cb8d5c6faf2f" 
+          data-elfsight-app-lazy
+        ></div>
+      </div>
       
       <a 
         href="https://www.instagram.com/chrishopbarton?igsh=c2MyY3BrZWQwNTlp&utm_source=qr" 
