@@ -2,8 +2,8 @@
   background: rgba(0, 0, 0, 0.9);
   padding: 40px 0;
   text-align: center;
-  color: #d0ffd0;
-  box-shadow: 0px -4px 10px rgba(0, 255, 0, 0.3);
+  color: #d0ffff;
+  box-shadow: 0px -4px 10px rgba(0, 255, 255, 0.3);
 }
 
 .container {
@@ -32,7 +32,7 @@
 }
 
 .socialLinks a {
-  color: #d0ffd0;
+  color: #d0ffff;
   font-size: 1.5rem;
   transition: all 0.3s ease-in-out;
 }

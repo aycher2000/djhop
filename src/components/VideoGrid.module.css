@@ -2,7 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 30px;
   margin-bottom: 40px;
 }
 
@@ -11,7 +11,13 @@
   width: 350px;
   height: 200px;
   border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.videoGrid iframe:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 255, 255, 0.5);
 }
 
 @media (max-width: 768px) {

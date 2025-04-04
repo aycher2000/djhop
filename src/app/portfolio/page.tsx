@@ -40,19 +40,42 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className={styles.portfolioContent}>
-      <section className={styles.section}>
+    <div className={styles.portfolioPage}>
+      {/* Hero Section */}
+      <section className={styles.portfolioHero}>
         <div className={styles.container}>
           <h1 className={styles.pageTitle}>Portfolio</h1>
-          
+          <p className={styles.pageSubtitle}>A collection of my work through the years</p>
+        </div>
+      </section>
+
+      {/* Featured Videos Section */}
+      <section className={styles.section}>
+        <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Featured Videos</h2>
-          <VideoGrid videoIds={videos} />
-          
+          <div className={styles.videoSection}>
+            <VideoGrid videoIds={videos} />
+          </div>
+        </div>
+      </section>
+
+      {/* Album & DVD Covers Section */}
+      <section className={styles.section}>
+        <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Album & DVD Covers</h2>
-          <Gallery items={galleryItems} />
-          
+          <div className={styles.gallerySection}>
+            <Gallery items={galleryItems} />
+          </div>
+        </div>
+      </section>
+
+      {/* Apple Music Section */}
+      <section className={styles.section}>
+        <div className={styles.container}>
           <h2 className={styles.sectionTitle}>Stream on Apple Music</h2>
-          <AppleMusicEmbed albumId="884962011" songId="884962165" />
+          <div className={styles.musicSection}>
+            <AppleMusicEmbed albumId="884962011" songId="884962165" />
+          </div>
         </div>
       </section>
     </div>

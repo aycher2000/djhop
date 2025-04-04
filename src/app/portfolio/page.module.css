@@ -1,13 +1,10 @@
-.portfolioContent {
-  padding-top: 100px; /* Space for fixed header */
+.portfolioPage {
   background-color: #000;
   min-height: 100vh;
+  padding-top: 80px; /* Space for header */
 }
 
-.section {
-  padding: 40px 0 60px;
-}
-
+/* Common container styles */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -15,19 +12,46 @@
   padding: 0 15px;
 }
 
+/* Hero section */
+.portfolioHero {
+  padding: 60px 0;
+  background-color: #111;
+  text-align: center;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+
 .pageTitle {
-  font-size: 3rem;
+  font-size: 3.5rem;
   color: #00ffff;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
 }
 
+.pageSubtitle {
+  font-size: 1.5rem;
+  color: #d0ffff;
+  text-align: center;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* Section styles */
+.section {
+  padding: 80px 0;
+  background-color: #000;
+  border-bottom: 1px solid rgba(0, 255, 255, 0.1);
+}
+
+.section:nth-child(even) {
+  background-color: #111;
+}
+
 .sectionTitle {
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   color: #00ffff;
   text-align: center;
-  margin: 40px 0;
+  margin-bottom: 40px;
   position: relative;
 }
 
@@ -40,15 +64,77 @@
   margin: 15px auto 0;
 }
 
-@media (max-width: 768px) {
-  .portfolioContent {
-    padding-top: 80px;
+/* Video section */
+.videoSection {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Gallery section */
+.gallerySection {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Music section */
+.musicSection {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: rgba(0, 255, 255, 0.05);
+  border: 1px solid rgba(0, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  transition: all 0.3s ease;
+}
+
+.musicSection:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 20px rgba(0, 255, 255, 0.2);
+  background-color: rgba(0, 255, 255, 0.08);
+}
+
+/* Responsive styles */
+@media (max-width: 1024px) {
+  .pageTitle {
+    font-size: 3rem;
   }
-  
+
+  .section {
+    padding: 60px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .portfolioHero {
+    padding: 40px 0;
+  }
+
   .pageTitle {
     font-size: 2.5rem;
   }
-  
+
+  .pageSubtitle {
+    font-size: 1.2rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .musicSection {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pageTitle {
+    font-size: 2rem;
+  }
+
   .sectionTitle {
     font-size: 1.8rem;
   }
