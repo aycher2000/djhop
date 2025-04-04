@@ -1,5 +1,6 @@
 import Interview from '@/components/Interview';
 import styles from './page.module.css';
+import './interviews-fix.css';
 
 export default function Interviews() {
   return (

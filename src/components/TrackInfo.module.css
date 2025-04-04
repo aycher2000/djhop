@@ -1,0 +1,31 @@
+.trackInfo {
+  background-color: #111;
+  padding: 60px 20px;
+  text-align: center;
+  color: #d0ffff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.trackInfo h2 {
+  font-size: 2rem;
+  color: #00ffff;
+  margin-bottom: 20px;
+}
+
+.trackInfo p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 700px;
+  margin: 0 auto 15px;
+}
+
+.trackInfo strong {
+  color: #00ffff;
+}

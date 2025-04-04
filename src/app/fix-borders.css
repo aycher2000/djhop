@@ -1,0 +1,70 @@
+/* Direct override to fix styling issues */
+
+/* Remove box shadows from header and footer elements */
+.header .logo,
+.header .logo a,
+.header .logo *,
+.footer .footerLogo,
+.footer .footerLogo a,
+.footer .footerLogo * {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Tone down the glow on all elements */
+.aboutContent,
+.interviewCard,
+.trackCard,
+.newsItem,
+.contactCard,
+.bookingForm,
+.profileImage,
+div[class*="card"],
+div[class*="Card"] {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3) !important;
+}
+
+/* Reduce header and footer glows */
+.header {
+  box-shadow: 0 3px 10px rgba(0, 255, 255, 0.2) !important;
+}
+
+.footer {
+  box-shadow: 0 -3px 10px rgba(0, 255, 255, 0.2) !important;
+}
+
+/* Keep only navigation items glowing */
+.navList li a {
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.2) !important;
+}
+
+.navList li a:hover, 
+.activeLink {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.4) !important;
+}
+
+/* Clean up any excessive borders */
+div, section, article, aside, nav {
+  border: none !important;
+}
+
+/* Keep important borders */
+.footer .copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.finalThoughts {
+  border-left: 3px solid rgba(0, 255, 255, 0.7) !important;
+}
+
+/* Reduce text shadow on headings */
+h1, h2, h3, h4, h5, h6 {
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.3) !important;
+}
+
+/* Make sure all bold text is cyan */
+strong, b, 
+.bold, em, i,
+.highlight {
+  color: #00ffff !important;
+}

@@ -1,0 +1,26 @@
+/* Direct fix for About page */
+.aboutPage strong,
+.aboutPage b,
+.aboutPage em,
+.aboutPage i,
+.storyContent strong,
+.storyContent b,
+.storyContent em,
+.storyContent i,
+.bioSection strong,
+.bioSection b,
+.section strong,
+.section b,
+.section em,
+.section i,
+strong, b {
+  color: #00ffff !important;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5) !important;
+}
+
+.section h2, 
+.section h3, 
+.sectionTitle {
+  color: #00ffff !important;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6) !important;
+}

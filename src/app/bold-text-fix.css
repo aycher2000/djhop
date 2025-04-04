@@ -1,0 +1,88 @@
+/* Super aggressive override for bold text colors */
+strong, 
+b, 
+[style*="font-weight: bold"], 
+[style*="font-weight:bold"],
+[style*="font-weight: 700"],
+[style*="font-weight:700"],
+[style*="font-weight: 600"],
+[style*="font-weight:600"],
+.storyContent strong,
+.interviewContent strong,
+.aboutContent strong,
+section strong,
+div strong,
+p strong,
+h1 strong, h2 strong, h3 strong, h4 strong, h5 strong, h6 strong,
+li strong,
+blockquote strong,
+a strong,
+span strong,
+.bold,
+.highlight,
+em,
+i,
+.italic,
+.emphasis,
+.emphasized,
+.accent,
+.accent-text {
+  color: #00ffff !important;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5) !important;
+}
+
+/* Ensure headings and key elements have cyan styling */
+h1, h2, h3, h4, h5, h6,
+.title, .heading, .header, .subtitle,
+.section-title, .sectionTitle,
+[class*="Title"],
+[class*="Heading"],
+[class*="Header"] {
+  color: #00ffff !important;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.7) !important;
+}
+
+/* Make sure all border elements use cyan */
+*::before, *::after,
+*[class*="border"],
+*[class*="Border"],
+*[class*="divider"],
+*[class*="Divider"],
+*[class*="separator"],
+*[class*="Separator"],
+*[style*="border"],
+*[style*="border-color"],
+*[style*="border-top"],
+*[style*="border-bottom"],
+*[style*="border-left"],
+*[style*="border-right"] {
+  border-color: #00ffff !important;
+}
+
+/* Fix any decorative elements */
+.line, .Line, 
+.highlight, .Highlight,
+.glow, .Glow,
+*[class*="glow"],
+*[class*="Glow"],
+*[style*="box-shadow"],
+*[style*="text-shadow"] {
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.7) !important;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8) !important;
+  border-color: #00ffff !important;
+  color: #00ffff !important;
+}
+
+/* Extremely specific targeting for about page bold text */
+.aboutPage strong,
+.aboutPage b,
+.aboutPage .storyContent strong,
+.aboutPage .storyContent b,
+.aboutPage .bioSection strong,
+.aboutPage .bioSection b,
+.aboutPage p strong,
+.aboutPage p b {
+  color: #00ffff !important;
+  font-weight: 600 !important;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.5) !important;
+}

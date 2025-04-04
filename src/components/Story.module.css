@@ -1,0 +1,77 @@
+.legendaryStory {
+  padding: 60px 0;
+  background-color: #111;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.storyTitle {
+  font-size: 2.2rem;
+  color: #00ffff;
+  text-align: center;
+  margin-bottom: 40px;
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+}
+
+.storyContent {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+  line-height: 1.7;
+}
+
+.storyContent p {
+  margin-bottom: 20px;
+  font-size: 1.15rem;
+  color: #d0ffff;
+}
+
+.storyContent strong {
+  color: #00ffff;
+  font-weight: 600;
+}
+
+.storyContent em {
+  color: #00ffff;
+  font-style: italic;
+}
+
+.storyContent blockquote {
+  margin: 30px auto;
+  padding: 15px 30px;
+  border-left: 4px solid #00ffff;
+  background-color: rgba(0, 255, 255, 0.1);
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .legendaryStory {
+    padding: 40px 0;
+  }
+  
+  .storyTitle {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  
+  .storyContent {
+    padding: 20px;
+  }
+  
+  .storyContent p {
+    font-size: 1rem;
+  }
+  
+  .storyContent blockquote {
+    padding: 10px 20px;
+    font-size: 1.1rem;
+  }
+}

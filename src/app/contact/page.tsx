@@ -2,6 +2,7 @@ import ContactForm from '@/components/ContactForm';
 import BookingForm from '@/components/BookingForm';
 import InstagramFeed from '@/components/InstagramFeed';
 import styles from './page.module.css';
+import './contact-fix.css';
 
 export default function Contact() {
   return (

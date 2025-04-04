@@ -23,6 +23,11 @@
 .footerLogo {
   display: flex;
   align-items: center;
+  box-shadow: none;
+}
+
+.footerLogo a {
+  box-shadow: none;
 }
 
 .socialLinks {
