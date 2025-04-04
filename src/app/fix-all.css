@@ -1,0 +1,120 @@
+/* 
+  Consolidated styling fixes 
+  This file replaces: fix-borders.css, cyan-glow.css, color-override.css, 
+  bold-text-fix.css, about-fix.css, interviews-fix.css, contact-fix.css,
+  header-fix.css, subtle-glow.css, remove-green.css
+*/
+
+/* Global color overrides */
+:root {
+  --secondary-color: #00ffff !important; /* Cyan instead of green */
+  --light-text: #d0ffff !important; /* Soft cyan */
+  --border-color: #00ffff !important; /* Cyan borders */
+  --box-shadow: 0 0 10px rgba(0, 255, 255, 0.3) !important; /* Subtle cyan glow */
+}
+
+/* Make all bold text cyan */
+strong, b, 
+.bold, em, i,
+.highlight {
+  color: #00ffff !important;
+}
+
+/* Header & Footer fixes */
+/* Only apply box shadow to the main containers, not nested elements */
+.header {
+  box-shadow: 0 3px 10px rgba(0, 255, 255, 0.2) !important;
+}
+
+.footer {
+  box-shadow: 0px -3px 10px rgba(0, 255, 255, 0.2) !important;
+}
+
+/* Remove extra glows from logo areas */
+.header .logo, 
+.header .logo a, 
+.header .logo *,
+.footer .footerLogo, 
+.footer .footerLogo a, 
+.footer .footerLogo * {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Keep navigation buttons styled */
+.navList li a {
+  box-shadow: 0 0 5px rgba(0, 255, 255, 0.2) !important;
+}
+
+.navList li a:hover, 
+.activeLink {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.4) !important;
+}
+
+/* Content elements - subtle glow */
+.aboutContent,
+.interviewCard,
+.trackCard,
+.newsItem,
+.contactCard,
+.bookingForm,
+.profileImage,
+.heroImage,
+.galleryItem,
+.widgetContainer,
+div[class*="card"],
+div[class*="Card"] {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3) !important;
+}
+
+/* Iframe & embeds - subtle glow */
+iframe,
+.videoGrid iframe,
+.appleMusicEmbed,
+.bandcampEmbed,
+[class*="Embed"],
+.embed-content,
+.gallery div,
+.videoGrid div {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3) !important;
+  border-color: rgba(0, 255, 255, 0.7) !important;
+}
+
+/* Headings - subtle glow */
+h1, h2, h3, h4, h5, h6,
+.title, .subtitle,
+.pageTitle, .pageSubtitle,
+.sectionTitle, .contentHeading,
+.interviewTitle, .storyTitle {
+  color: #00ffff !important;
+  text-shadow: 0 0 5px rgba(0, 255, 255, 0.3) !important;
+}
+
+/* Keep important borders */
+.finalThoughts {
+  border-left: 3px solid rgba(0, 255, 255, 0.7) !important;
+  box-shadow: 0 0 6px rgba(0, 255, 255, 0.2) !important;
+}
+
+.footer .copyright {
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Clean up common elements that don't need borders */
+.header .container,
+.header .nav,
+.header .navList,
+.footer .container,
+.footer .footerContent {
+  box-shadow: none !important;
+  border: none !important;
+}
+
+/* Ensure borders don't appear on containers */
+div.container, 
+section.container,
+div.content,
+section.content {
+  border: none !important;
+  box-shadow: none !important;
+}

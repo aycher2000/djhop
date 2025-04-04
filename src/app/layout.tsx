@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
-import "./fix-borders.css"; // Simple direct fix for all styling issues
+import "./fix-all.css"; // Consolidated styling fixes
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 

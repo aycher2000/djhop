@@ -1,6 +1,5 @@
 import styles from './page.module.css';
 import Image from 'next/image';
-import './about-fix.css';
 
 export default function About() {
   return (
