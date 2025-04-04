@@ -1,18 +1,18 @@
 .newsItem {
   background-color: #000;
-  border: 2px solid #00ff00;
+  border: 2px solid #00ffff;
   padding: 20px;
   border-radius: 5px;
   width: 90%;
   max-width: 500px;
   text-align: left;
-  box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .newsItem:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
 }
 
 .date {
@@ -24,8 +24,8 @@
 .newsItem h3 {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #00ff00;
-  text-shadow: 0px 0px 5px rgba(0, 255, 0, 0.8);
+  color: #00ffff;
+  text-shadow: 0px 0px 5px rgba(0, 255, 255, 0.8);
   margin-bottom: 10px;
 }
 
@@ -54,7 +54,7 @@
 @keyframes glitch {
   0% { text-shadow: none; }
   20% { text-shadow: 2px 2px red, -2px -2px cyan; }
-  40% { text-shadow: -3px 3px limegreen, 3px -3px cyan; }
+  40% { text-shadow: -3px 3px cyan, 3px -3px cyan; }
   60% { text-shadow: 1px -1px red, -1px 1px cyan; }
   80% { text-shadow: 3px 3px red, -3px -3px cyan; }
   100% { text-shadow: none; }

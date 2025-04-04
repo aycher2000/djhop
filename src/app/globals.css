@@ -1,13 +1,13 @@
 :root {
   --primary-color: #000; /* Black background */
-  --secondary-color: #00ff00; /* Lime Green */
+  --secondary-color: #00ffff; /* Cyan */
   --accent-color: #00ffff; /* Cyan */
   --text-color: #ffffff; /* White text for contrast */
-  --light-text: #d0ffd0; /* Soft lime green for subtle highlights */
+  --light-text: #d0ffff; /* Soft cyan for subtle highlights */
   --dark-bg: #111; /* Slightly lighter black for subtle depth */
-  --border-color: #00ff00; /* Lime green borders */
+  --border-color: #00ffff; /* Cyan borders */
   --transition: all 0.3s ease-in-out;
-  --box-shadow: 0 5px 15px rgba(0, 255, 0, 0.3); /* Soft green glow effect */
+  --box-shadow: 0 5px 15px rgba(0, 255, 255, 0.3); /* Soft cyan glow effect */
 }
 
 * {
