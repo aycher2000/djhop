@@ -15,19 +15,19 @@
 
 .pageTitle {
   font-size: 3rem;
-  color: #00ff00;
+  color: #00ffff;
   text-align: center;
   margin-bottom: 10px;
-  text-shadow: 0 0 15px rgba(0, 255, 0, 0.8);
+  text-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
 }
 
 .pageSubtitle {
   font-size: 1.8rem;
-  color: #00ff00;
+  color: #00ffff;
   text-align: center;
   margin-bottom: 30px;
   font-weight: 600;
-  text-shadow: 0 0 10px rgba(0, 255, 0, 0.6);
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
 }
 
 .profileImageContainer {
@@ -63,8 +63,13 @@
 .aboutContent p {
   margin-bottom: 20px;
   font-size: 1.2rem;
-  color: #d0ffd0;
+  color: #d0ffff;
   line-height: 1.6;
+}
+
+.aboutContent strong {
+  color: #00ffff;
+  font-weight: 600;
 }
 
 .bioIntro {
@@ -77,10 +82,10 @@
 
 .sectionTitle {
   font-size: 1.6rem;
-  color: #00ff00;
+  color: #00ffff;
   margin-bottom: 20px;
   font-weight: 600;
-  text-shadow: 0 0 8px rgba(0, 255, 0, 0.6);
+  text-shadow: 0 0 8px rgba(0, 255, 255, 0.6);
 }
 
 .highlight {
@@ -90,13 +95,13 @@
 }
 
 .finalThoughts {
-  background-color: rgba(0, 255, 0, 0.1);
+  background-color: rgba(0, 255, 255, 0.1);
   color: #fff;
   padding: 25px;
   border-radius: 5px;
   margin-top: 30px;
-  border-left: 4px solid #00ff00;
-  box-shadow: 0 0 15px rgba(0, 255, 0, 0.4);
+  border-left: 4px solid #00ffff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
 }
 
 .finalThoughts p {

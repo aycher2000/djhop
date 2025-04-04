@@ -10,12 +10,15 @@ interface InstagramFeedProps {
 }
 
 export default function InstagramFeed({}: InstagramFeedProps) {
-  useEffect(() => {
-    // This will trigger Elfsight to reload widgets when the component mounts
+  const handleScriptLoad = () => {
     if (typeof window !== 'undefined' && (window as any).eapps) {
-      (window as any).eapps.initAll();
+      try {
+        (window as any).eapps.initAll();
+      } catch (error) {
+        console.error('Error initializing Elfsight:', error);
+      }
     }
-  }, []);
+  };
 
   return (
     <div className={styles.instagramSection}>
@@ -25,6 +28,7 @@ export default function InstagramFeed({}: InstagramFeedProps) {
         <Script 
           src="https://static.elfsight.com/platform/platform.js" 
           strategy="afterInteractive"
+          onLoad={handleScriptLoad}
         />
         <div 
           className="elfsight-app-750cf217-917b-4c7d-8cf6-cb8d5c6faf2f" 
