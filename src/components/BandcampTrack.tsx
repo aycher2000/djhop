@@ -5,6 +5,8 @@ interface BandcampTrackProps {
 }
 
 export default function BandcampTrack({ albumId, trackId, title }: BandcampTrackProps) {
+  // For HTML iframes, the fallback content isn't rendered in modern browsers
+  // We're just providing the embed without fallback content
   return (
     <iframe
       style={{
@@ -14,8 +16,8 @@ export default function BandcampTrack({ albumId, trackId, title }: BandcampTrack
       }}
       src={`https://bandcamp.com/EmbeddedPlayer/album=${albumId}/size=small/bgcol=333333/linkcol=00ffff/artwork=none/track=${trackId}/transparent=true/`}
       seamless
-    >
-      <a href={`https://bossasaurus.bandcamp.com/album/${albumId}`}>{title}</a>
-    </iframe>
+      title={title || "Bandcamp Track"}
+      allow="autoplay" 
+    />
   );
 } 

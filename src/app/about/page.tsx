@@ -1,9 +1,43 @@
 import styles from './page.module.css';
 import Image from 'next/image';
+import { Metadata } from 'next';
+import Script from 'next/script';
+
+export const metadata: Metadata = {
+  title: 'DJ H.O.P - About | The Journey of a Turntablist',
+  description: 'Explore DJ H.O.P\'s journey from San Diego to the Bay Area and beyond. Learn about his turntablism roots, influences, and artistic evolution.',
+  keywords: ['DJ H.O.P biography', 'turntablist journey', 'hip-hop history', 'DJ career', 'Bay Area DJ', 'San Diego DJ'],
+};
 
 export default function About() {
   return (
     <div className={styles.aboutPage}>
+      {/* JSON-LD structured data for search engines and AI crawlers */}
+      <Script id="about-structured-data" type="application/ld+json" dangerouslySetInnerHTML={{ 
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Person",
+          "name": "DJ H.O.P",
+          "url": "https://djhop.vercel.app/about",
+          "image": "https://djhop.vercel.app/images/zman.JPG",
+          "jobTitle": "Turntablist & Music Producer",
+          "description": "DJ H.O.P is a turntablist, producer, and artist with decades of experience in hip-hop culture, from San Diego to the Bay Area and beyond.",
+          "knowsAbout": ["Turntablism", "Hip Hop", "Music Production", "Vinyl Records", "Scratching"],
+          "homeLocation": {
+            "@type": "Place",
+            "name": "San Diego, California"
+          },
+          "sameAs": [
+            "https://www.instagram.com/chrishopbarton",
+            "https://www.facebook.com/share/17xq2EXy4y/?mibextid=wwXIfr"
+          ],
+          "workPerformed": {
+            "@type": "CreativeWork",
+            "name": "40 oz Breaks",
+            "description": "DJ tool vinyl with beats and skipless samples to scratch with"
+          }
+        })
+      }} />
       <div className={styles.container}>
         <h1 className={styles.pageTitle}>My Story</h1>
         <h2 className={styles.pageSubtitle}>About Me: The Journey of a Turntablist</h2>

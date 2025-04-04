@@ -1,0 +1,10 @@
+# Allow all web crawlers (including AI crawlers)
+User-agent: *
+Allow: /
+
+# Specify Sitemap location
+Sitemap: https://djhop.vercel.app/sitemap.xml
+
+# Rate limiting for specific bots if needed
+# User-agent: AdsBot-Google
+# Crawl-delay: 1

@@ -2,6 +2,14 @@ import VideoGrid from '@/components/VideoGrid';
 import Gallery from '@/components/Gallery';
 import AppleMusicEmbed from '@/components/AppleMusicEmbed';
 import styles from './page.module.css';
+import { Metadata } from 'next';
+import Script from 'next/script';
+
+export const metadata: Metadata = {
+  title: 'DJ H.O.P - Portfolio | Music, Videos & Album Artwork',
+  description: 'Browse DJ H.O.P\'s portfolio featuring music tracks, performance videos, album artwork, and collaborations spanning decades in hip-hop.',
+  keywords: ['DJ H.O.P portfolio', 'turntablist videos', 'hip-hop albums', 'scratch DJ', 'music production', 'vinyl records', 'DJ performances'],
+};
 
 export default function Portfolio() {
   // YouTube video IDs from the original site
@@ -41,6 +49,50 @@ export default function Portfolio() {
 
   return (
     <div className={styles.portfolioPage}>
+      {/* JSON-LD structured data for search engines and AI crawlers */}
+      <Script id="portfolio-structured-data" type="application/ld+json" dangerouslySetInnerHTML={{ 
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "CollectionPage",
+          "name": "DJ H.O.P Portfolio",
+          "description": "A collection of DJ H.O.P's work through the years, including videos, album artwork, and music tracks.",
+          "mainEntity": {
+            "@type": "MusicGroup",
+            "name": "DJ H.O.P",
+            "member": {
+              "@type": "Person",
+              "name": "DJ H.O.P"
+            }
+          },
+          "hasPart": [
+            {
+              "@type": "VideoObject",
+              "name": "DJ H.O.P Performance",
+              "description": "Performance video featuring DJ H.O.P's turntablism skills",
+              "embedUrl": "https://www.youtube.com/embed/fEuHaelQuN4",
+              "contentUrl": "https://www.youtube.com/watch?v=fEuHaelQuN4"
+            },
+            {
+              "@type": "MusicAlbum",
+              "name": "NMCL 2004",
+              "image": "https://djhop.vercel.app/images/album1-large.jpg",
+              "byArtist": {
+                "@type": "MusicGroup",
+                "name": "DJ H.O.P"
+              }
+            },
+            {
+              "@type": "MusicAlbum",
+              "name": "CaptureTheFlag 2001",
+              "image": "https://djhop.vercel.app/images/album2-large.jpg",
+              "byArtist": {
+                "@type": "MusicGroup",
+                "name": "DJ H.O.P"
+              }
+            }
+          ]
+        })
+      }} />
       {/* Hero Section */}
       <section className={styles.portfolioHero}>
         <div className={styles.container}>

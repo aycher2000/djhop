@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+  http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+  <!-- Home Page -->
+  <url>
+    <loc>https://djhop.vercel.app/</loc>
+    <lastmod>2025-04-03T00:00:00+00:00</lastmod>
+    <priority>1.0</priority>
+    <changefreq>weekly</changefreq>
+    <image:image>
+      <image:loc>https://djhop.vercel.app/images/logo.webp</image:loc>
+      <image:title>DJ H.O.P Logo</image:title>
+    </image:image>
+  </url>
+
+  <!-- About Page -->
+  <url>
+    <loc>https://djhop.vercel.app/about</loc>
+    <lastmod>2025-04-03T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://djhop.vercel.app/images/zman.JPG</image:loc>
+      <image:title>DJ H.O.P Profile</image:title>
+    </image:image>
+  </url>
+
+  <!-- Portfolio Page -->
+  <url>
+    <loc>https://djhop.vercel.app/portfolio</loc>
+    <lastmod>2025-04-03T00:00:00+00:00</lastmod>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Interviews Page -->
+  <url>
+    <loc>https://djhop.vercel.app/interviews</loc>
+    <lastmod>2025-04-03T00:00:00+00:00</lastmod>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+    <image:image>
+      <image:loc>https://djhop.vercel.app/images/interview-thumbnail.jpg</image:loc>
+      <image:title>DJ H.O.P Interview</image:title>
+    </image:image>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://djhop.vercel.app/contact</loc>
+    <lastmod>2025-04-03T00:00:00+00:00</lastmod>
+    <priority>0.6</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+</urlset>

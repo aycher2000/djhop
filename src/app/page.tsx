@@ -1,10 +1,50 @@
 import styles from './page.module.css';
 import Image from 'next/image';
 import BandcampTrack from '@/components/BandcampTrack';
+import { Metadata } from 'next';
+import Script from 'next/script';
+
+export const metadata: Metadata = {
+  title: 'DJ H.O.P - Turntablist, Producer & Artist | Home',
+  description: 'Experience the art of DJ H.O.P, a versatile turntablist with decades of hip-hop culture craftsmanship. Featured tracks, latest news, and artistic journey.',
+};
 
 export default function Home() {
   return (
     <div className={styles.homePage}>
+      {/* JSON-LD structured data for search engines and AI crawlers */}
+      <Script id="structured-data" type="application/ld+json" dangerouslySetInnerHTML={{ 
+        __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "MusicGroup",
+          "name": "DJ H.O.P",
+          "url": "https://djhop.vercel.app",
+          "logo": "https://djhop.vercel.app/images/logo.webp",
+          "image": "https://djhop.vercel.app/images/solo.JPG",
+          "description": "DJ H.O.P is a turntablist, producer, and artist with decades of experience in hip-hop culture, from San Diego to the Bay Area and beyond.",
+          "genre": ["Hip Hop", "Turntablism", "Electronic"],
+          "foundingLocation": {
+            "@type": "Place",
+            "name": "San Diego, California"
+          },
+          "member": {
+            "@type": "Person",
+            "name": "DJ H.O.P",
+            "url": "https://djhop.vercel.app/about"
+          },
+          "sameAs": [
+            "https://www.instagram.com/chrishopbarton",
+            "https://www.facebook.com/share/17xq2EXy4y/?mibextid=wwXIfr"
+          ],
+          "potentialAction": {
+            "@type": "ListenAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://djhop.vercel.app/#featured-tracks"
+            }
+          }
+        })
+      }} />
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.container}>
